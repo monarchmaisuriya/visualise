@@ -1,0 +1,44 @@
+{
+  "name": "visualise",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Draw with tldraw in Paseo: .tldr files in your workspace, with a one-click copy to tldraw.com.",
+  "license": "MIT",
+  "files": [
+    "paseo-plugin.json",
+    "OVERVIEW.md",
+    "visualise.png",
+    "index.client.tsx",
+    "index.server.ts",
+    "client/",
+    "server/",
+    "shared/",
+    "LICENSE",
+    "!**/*.test.ts"
+  ],
+  "scripts": {
+    "build": "node scripts/build-runtime.mjs",
+    "build:dev": "node scripts/build-runtime.mjs --dev",
+    "typecheck": "node scripts/build-runtime.mjs --if-missing && tsc --noEmit -p tsconfig.client.json && tsc --noEmit -p tsconfig.server.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.13.0",
+    "@tanstack/react-query": "^5.104.5",
+    "@tldraw/assets": "5.5.2",
+    "@tldraw/tlschema": "^5.5.2",
+    "@types/node": "^22.20.5",
+    "@types/react": "~19.2.0",
+    "@types/react-dom": "~19.2.0",
+    "esbuild": "^0.27.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-native": "^0.86.3",
+    "tldraw": "5.5.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
