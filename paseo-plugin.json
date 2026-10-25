@@ -1,0 +1,10 @@
+{
+  "id": "visualise",
+  "name": "Visualise",
+  "icon": "visualise.png",
+  "description": "Draw with tldraw in Paseo: .tldr files in your workspace, with a one-click copy to tldraw.com.",
+  "requirements": {
+    "paseo": ">=0.13.0 <0.14.0"
+  },
+  "build": [["npm", "ci"], ["npm", "run", "build"]]
+}
